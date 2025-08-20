@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome</h1>
+    <form action="/student" method="post">
+        <h2>Enter your name</h2>
+        <input type="text" name="sName" placeholder="Enter your name">
+        <h2>Enter your department</h2>
+        <input type="text" name="sDept" placeholder="Enter your dept:">
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+</body>
+</html>
